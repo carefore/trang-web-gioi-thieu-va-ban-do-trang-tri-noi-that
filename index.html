@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang web đồ trang trí nội thất</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Trang web đồ trang trí nội thất</h1>
+
+  <form id="productForm" action="process.php" method="post">
+    <label for="productName">Tên sản phẩm:</label>
+    <input type="text" id="productName" name="productName" required><br><br>
+    
+    <label for="productDescription">Mô tả:</label><br>
+    <textarea id="productDescription" name="productDescription" required></textarea><br><br>
+    
+    <label for="productPrice">Giá:</label>
+    <input type="text" id="productPrice" name="productPrice" required><br><br>
+    
+    <input type="submit" value="Thêm sản phẩm">
+  </form>
+
+  <div id="productList">
+    <!-- Danh sách sản phẩm sẽ được hiển thị ở đây -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
